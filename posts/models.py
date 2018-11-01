@@ -5,3 +5,8 @@ from django.db import models
 #content of a message board post
 class Post(models.Model):
     text = models.TextField() #specifying type of content
+
+#this function displays the first 50 characters in
+#the post description
+    def __str__(self):
+        return self.text[:50]
