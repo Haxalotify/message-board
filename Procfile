@@ -1,1 +1,1 @@
-ECHO is on.
+web: gunicorn mb_project.wsgi --log-file -
